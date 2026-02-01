@@ -247,7 +247,7 @@ const MallaGrid: React.FC<Props> = ({ malla, onAsignaturaClick, aprobadas = [], 
         </div>
       )}
       {/* Label flotante de créditos en curso solo en móvil */}
-      {creditosEnCurso && creditosEnCurso > 0 && (
+      {creditosEnCurso > 0 && (
         <div className="creditos-flotante-movil"
           style={{
             display: 'none', // por defecto oculto, visible solo en móvil por CSS
@@ -305,7 +305,7 @@ const MallaGrid: React.FC<Props> = ({ malla, onAsignaturaClick, aprobadas = [], 
         <h1 style={{ textAlign: "center", color: "#259a57", marginBottom: 0, flex: 1, fontSize: 32 }}>
           {malla.carrera}
         </h1>
-        {creditosEnCurso && creditosEnCurso > 0 && (
+        {creditosEnCurso > 0 && (
           <div className="creditos-label-superior" style={{
             background: '#ffe066',
             color: '#8a6d1b',
